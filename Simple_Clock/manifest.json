@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2, //manifest的版本，这里现在填2就好了
+    "name": "简单的时钟",  //扩展的名字是“简单地时钟”
+    "version": "1.0", // 扩展到当前版本为1.0，这里由你自己控制，以后升级的时候，要比当前版本高就好了。
+    "description": "我的第一个Chrome扩展",  // 对于这个拓展的描述
+    "icons": {   // 定义了一些图标文件，放在images文件夹下，每个图标的名称和像素需要对应。
+        "16": "images/icon16.png",
+        "48": "images/icon48.png",
+        "128": "images/icon128.png"
+    },
+    "browser_action": {  // browser_action指定扩展的图标放在Chrome的工具栏中
+        "default_icon": {  // 定义了在工具栏中显示的图标
+            "19": "images/icon19.png",
+            "38": "images/icon38.png"
+        },
+        "default_title": "我的时钟",  // 当鼠标放在拓展图标上的时候显示的描述
+        "default_popup": "popup.html"  // 当点击图标时，展示的html页面。
+    }
+}
