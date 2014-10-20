@@ -1,0 +1,12 @@
+{
+    "manifest_version": 2,
+    "name": "永远点不到的搜索按钮",
+    "version": "1.0",
+    "description": "让你永远也点击不到baidu的搜索按钮",
+    "content_scripts": [
+        {
+            "matches": ["*://www.baidu.com/"],  //这里匹配任意的包含://www.baidu.com/，意思是当访问的页面url匹配时，下面的脚本文件就会自动执行
+            "js": ["js/haha.js"]  // 这里的脚本文件是haha.js
+        }
+    ]
+}
